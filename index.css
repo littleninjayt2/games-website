@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ececec;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tab {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.tab button {
+    background: linear-gradient(135deg, #4CAF50, #81C784);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    font-size: 18px;
+    color: #fff;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border-radius: 8px 8px 0 0;
+    flex: 1;
+    text-align: center;
+}
+
+.tab button:hover {
+    background: linear-gradient(135deg, #388E3C, #66BB6A);
+    transform: scale(1.05);
+}
+
+.tab button.active {
+    background: linear-gradient(135deg, #2E7D32, #66BB6A);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border-top: 2px solid #ddd;
+    background: #fafafa;
+    border-radius: 0 0 8px 8px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.tabcontent h2 {
+    margin-top: 0;
+    color: #2E7D32;
+    font-size: 24px;
+}
+
+.tabcontent p {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
